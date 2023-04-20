@@ -3,16 +3,19 @@
 }
 .main {
     display: flex;
-    height: 200px;
+    height: 300px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+    margin: 50px;
+    line-height: .4;
+    flex-wrap: wrap;
 
 }
 
 .main img {
    
-    max-height: 100px;
+  max-height: 100px;
   
 }
 .logo {
@@ -28,8 +31,156 @@
 }
 .portfolio img {
     max-width: 300px;
-    margin: 10px;
+    position:static ;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
 }
+
+.text h1 {
+  font-size: 95px;
+  font-family: 'Bakbak One', cursive;
+}
+
+#title {
+  font-family: 'Climate Crisis', cursive;
+  letter-spacing: .5rem;
+}
+
+
+
+
+
+.hover-img {
+    background-color: #ffbe0b;
+    color: #fff;
+    display: inline-block;
+    margin: 25px;
+    max-width: 45%;
+    min-width: 45%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    
+ 
+  }
+
+  
+  
+  .hover-img * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+    
+  }
+  
+  
+  .hover-img::before,
+  .hover-img::after {
+    background-color:#ffbe0b;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease; 
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+  
+  }
+  
+  
+  .hover-img img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+ 
+  }
+  
+  
+  .hover-img figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: .5;
+    
+  }
+  
+  
+  .hover-img:hover::before,
+  .hover-img:hover::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  
+  .hover-img:hover > img {
+    opacity: 0.7;
+   
+  }
+  
+  .hover-img:hover figcaption {
+    opacity: 1;
+   
+  }
+
+  a{
+    color: white;
+  }
+
+  figcaption {
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-family: 'Bakbak One', cursive;
+    font-size: 65px;
+    font-weight: bolder;
+    line-height: 1.2;
+    text-align: left;
+  }
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    
+    
+   
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+
+
+
 
 .skills {
     display: flex;
@@ -39,30 +190,15 @@
     align-content: center;
 }
 
-.programs {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 10px;
 
+.skills p {
+  word-spacing: 30px;
 }
 
-p {
-    color: grey;
-    margin: 20px;
-    padding: 10px;
-    border-style: solid;
-    border-color: yellow;
-    border-radius: 45%;
-    box-sizing: border-box;
-    border-width: 3px;
 
-}
-h3 {
-    color: grey;
-    font-family: 'Yeseva One', cursive;
-    font-size: 25px;
-    margin-left: 40px;
-}
+
+
+
+
+
 
